@@ -8,6 +8,10 @@ DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 enableRobotsTXT = true
 
+[module]
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
+
 [languages]
 [languages.en]
 title = "CAPP 4 Good"
