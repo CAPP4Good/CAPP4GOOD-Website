@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:53009/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/capp4good/</loc>
+    <loc>http://localhost:1313/tags/capp4good/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/hackathon/</loc>
+    <loc>http://localhost:1313/tags/hackathon/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/post/post_002/</loc>
+    <loc>http://localhost:1313/post/post_002/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/peru/</loc>
+    <loc>http://localhost:1313/tags/peru/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/post/</loc>
+    <loc>http://localhost:1313/tags/post/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/transparency/</loc>
+    <loc>http://localhost:1313/tags/transparency/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/tags/welcome/</loc>
+    <loc>http://localhost:1313/tags/welcome/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/post/post_001/</loc>
+    <loc>http://localhost:1313/post/post_001/</loc>
     <lastmod>2025-10-08T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:53009/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
