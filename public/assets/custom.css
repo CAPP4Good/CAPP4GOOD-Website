@@ -510,3 +510,34 @@ footer a:hover {
 .muted {
   color: var(--muted);
 }
+
+/* Responsive tweaks */
+@media (max-width: 780px) {
+  .posts-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .post-row {
+    grid-template-columns: 1fr;
+    padding: 0.75rem 0;
+    border-top: 1px solid #e6e9f2;
+    border-bottom: 1px solid #e6e9f2;
+  }
+  .post-row .post-body {
+    padding: 0.75rem 0 0;
+  }
+  .post-row .post-thumb.horiz img {
+    min-height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .posts-wrap {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .filters-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
