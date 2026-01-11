@@ -1,35 +1,46 @@
-# CAPP 4 Good Website
+# CAPP 4 Good Website (static)
 
-Hugo static site. The repo includes the editable Hugo sources and the generated `public` output.
+Static HTML/CSS/JS site. Everything lives under `public/` and deploys as-is.
 
-## Project layout
-- `hugo.toml`: Site configuration (title, base URL, theme, languages).
-- `content/en/_index.md`: Homepage content
-- `content/en/about/index.md`: About page content folder (can include images or sub-sections).
-- `content/en/post/`: Blog section; `_index.md` controls listing, individual `post_*.md` files are posts.
-- `archetypes/default.md`: Front matter template used when running `hugo new`.
-- `themes/ananke/`: Ananke theme assets/layouts; customize here if you need design changes beyond content.
-- `public/`: Generated site output (overwritten by `hugo`); do not edit by hand.
+## Structure
+- `public/`: full site. `public/index.html` home; styles in `public/ananke/` + `public/assets/custom.css`.
+- `public/assets/events.json`: events shown on About; edit to add/update date/title/description/link.
+- `.github/workflows/static-site.yml`: deploys `public/` to GitHub Pages via Actions.
 
-## Run and develop
-Run these commands in your terminal after cloning:
-
-```sh
-# Install Hugo Extended and Go (follow https://gohugo.io/installation/ if you need platform specifics)
-# macOS example:
-brew install hugo go
-
-# From the repo root, download the theme module
-hugo mod vendor
-
-# Start the dev server with drafts (use a different port if 1313 is taken)
-hugo server -D --bind 127.0.0.1 --port 1313
-
-# Build the static site for production (outputs to public/)
-hugo
+## Local preview
+```
+python -m http.server 8000
+open http://localhost:8000/
 ```
 
-Edit content under `content/en/`. Add a post with:
-```sh
-hugo new post/post_slug.md
+## Publish to GitHub Pages
+1) In GitHub Settings → Pages, set Source = GitHub Actions.  
+2) `git push` to `main` (or run workflow “Deploy static site to Pages” in Actions).  
+3) Check the workflow output for `page_url` (e.g., https://capp4good.github.io/Website/).
+
+## How to add a post
+1) Duplicate an existing folder under `public/post/` (e.g., `post_003`), or create a new one with your HTML.  
+2) Update the card data in `public/post/index.html`:
+   - Add a new `.post-card` block with:
+     - `data-date="YYYY-MM-DD"` for sorting (newest first).
+     - `data-tags="tag1,tag2"` for filtering.
+     - A thumbnail `<div class="post-thumb"><img src=images/your-image.png ...></div>`.
+   - Use relative paths for images (`public/images/your-image.png`).  
+3) Update the post detail HTML inside your new folder (`index.html`), including title, author, date, tags, and content.  
+4) (Optional) Write the content in R Markdown using `public/templates/post_template.Rmd`; knit to HTML fragment and paste into the body.
+
+## How to update the events calendar
+1) Edit `public/assets/events.json` and add objects like:
+```json
+{
+  "date": "2026-01-22",
+  "title": "Hacknight: Open Data",
+  "description": "Hands-on co-work night with open datasets.",
+  "link": "https://example.com/register"
+}
 ```
+2) The calendar shows the next 14 days by default; “Show more events” reveals all entries.
+
+## Contribute workflow
+- Preferred: open a PR with post updates and/or event edits.  
+- Alternatively: email the Rmd/HTML + images and the JSON edits; we’ll apply them.

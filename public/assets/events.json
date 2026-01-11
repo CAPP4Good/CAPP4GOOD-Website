@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-01-15",
+    "title": "Lightning Talks: Civic Tech Showcase",
+    "description": "Student teams present 5-minute lightning talks on data-for-good experiments.",
+    "link": "https://example.com/register/lightning-talks"
+  },
+  {
+    "date": "2026-01-18",
+    "title": "Workshop: Building Public Dashboards",
+    "description": "Hands-on session to prototype dashboards for community partners.",
+    "link": "https://example.com/register/dashboard-workshop"
+  },
+  {
+    "date": "2026-01-22",
+    "title": "Hacknight: Open Data for Equity",
+    "description": "Co-work night focused on open datasets for justice and equity projects.",
+    "link": "https://example.com/register/hacknight"
+  },
+  {
+    "date": "2026-01-24",
+    "title": "Fireside Chat: Data for Public Good",
+    "description": "Informal discussion with alumni working in civic data roles.",
+    "link": "https://example.com/register/fireside"
+  }
+]

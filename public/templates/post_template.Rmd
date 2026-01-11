@@ -1,0 +1,38 @@
+---
+title: "Post Title"
+author: "Your Name"
+date: "2026-01-10"
+summary: "One or two sentences that appear in the listing."
+tags: ["impact", "data"]
+hero_image: "images/CAPP4Good_webversion.png"
+output:
+  html_fragment:
+    toc: false
+    df_print: paged
+knitr:
+  opts_chunk: {echo: false, message: false, warning: false}
+---
+
+<!-- How to use this template:
+1) Duplicate this file and rename it for your post.
+2) Edit the YAML above.
+3) Knit to HTML (html_fragment). Copy the generated HTML and paste it into the article body of your new folder under public/post/ (e.g., public/post/post_003/index.html), keeping the existing header/footer markup.
+4) Store images in public/images/ and reference them with relative paths, e.g., images/my-image.png.
+-->
+
+## Title Goes Here
+
+Intro paragraph about the project or story.
+
+### Section 1
+
+- Key point 1
+- Key point 2
+
+### Section 2
+
+Add your narrative, visuals, or code snippets (set echo=TRUE in a chunk if you want to show code).
+
+### Call to action
+
+How readers can engage, follow up, or contribute.

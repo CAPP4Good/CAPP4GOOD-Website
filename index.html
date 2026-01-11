@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CAPP 4 Good</title>
+  <meta http-equiv="refresh" content="0; url=public/">
+  <script>
+    // Redirect to the built site under /public/, keeping any path/query.
+    (function () {
+      var target = "public/";
+      var rest = window.location.pathname.replace(/^[\\/]/, "");
+      if (rest && rest !== "index.html") {
+        target += rest;
+      }
+      if (window.location.search) {
+        target += window.location.search;
+      }
+      window.location.replace(target);
+    })();
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 3rem; color: #222; }
+    a { color: #0a6cff; }
+  </style>
+</head>
+<body>
+  <p>Redirigiendo al sitio… Si no sucede automáticamente, entra aquí: <a href="public/">public/</a></p>
+</body>
+</html>

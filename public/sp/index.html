@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="sp">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><base href="/" id="base-href">
+<script>
+  (function() {
+    var base = document.getElementById('base-href');
+    if (!base) return;
+    var path = window.location.pathname || '';
+    var isPages = location.hostname.indexOf('github.io') !== -1 || path.indexOf('/Website/') !== -1;
+    var underPublic = path.indexOf('/public/') !== -1;
+    var href = '/';
+    if (isPages) {
+      href = '/Website/';
+    } else if (underPublic) {
+      href = '/public/';
+    }
+    base.setAttribute('href', href);
+  })();
+</script>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     

@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>http://localhost:1313/post/</title>
-    <link rel="canonical" href="http://localhost:1313/post/">
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=http://localhost:1313/post/">
-  </head>
-</html>
+<!doctype html><html lang=en-us><head><base href="/" id="base-href">
+<script>
+  (function() {
+    var base = document.getElementById('base-href');
+    if (!base) return;
+    var path = window.location.pathname || '';
+    var isPages = location.hostname.indexOf('github.io') !== -1 || path.indexOf('/Website/') !== -1;
+    var underPublic = path.indexOf('/public/') !== -1;
+    var href = '/';
+    if (isPages) {
+      href = '/Website/';
+    } else if (underPublic) {
+      href = '/public/';
+    }
+    base.setAttribute('href', href);
+  })();
+</script>
+<title>post/</title><link rel=canonical href=post/><meta charset=utf-8><meta http-equiv=refresh content="0; url=post/"></head></html>
