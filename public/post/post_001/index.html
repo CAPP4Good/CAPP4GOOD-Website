@@ -3,15 +3,13 @@
   (function() {
     var base = document.getElementById('base-href');
     if (!base) return;
-    var path = window.location.pathname || '';
-    var isPages = location.hostname.indexOf('github.io') !== -1 || path.indexOf('/') !== -1;
-    var underPublic = path.indexOf('/public/') !== -1;
+    var parts = (window.location.pathname || '').split('/').filter(Boolean);
+    var isPages = location.hostname.indexOf('github.io') !== -1;
+    var repo = isPages ? parts[0] || '' : '';
+    var underPublic = parts[0] === 'public';
     var href = '/';
-    if (isPages) {
-      href = '/';
-    } else if (underPublic) {
-      href = '/public/';
-    }
+    if (repo) href = '/' + repo + '/';
+    else if (underPublic) href = '/public/';
     base.setAttribute('href', href);
   })();
 </script>
