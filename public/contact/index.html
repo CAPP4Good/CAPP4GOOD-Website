@@ -4,11 +4,12 @@
     var base = document.getElementById('base-href');
     if (!base) return;
     var path = window.location.pathname || '';
-    var isPages = location.hostname.indexOf('github.io') !== -1 || path.indexOf('/') !== -1;
-    var underPublic = path.indexOf('/public/') !== -1;
+    var segments = path.split('/').filter(Boolean);
+    var isPages = location.hostname.indexOf('github.io') !== -1;
+    var underPublic = segments[0] === 'public';
     var href = '/';
-    if (isPages) {
-      href = '/';
+    if (isPages && segments.length) {
+      href = '/' + segments[0] + '/';
     } else if (underPublic) {
       href = '/public/';
     }
