@@ -1,15 +1,7 @@
 <!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>CAPP 4 Good</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=robots content="noindex, follow"><meta http-equiv="refresh" content="0; url=about/"><script>
   (function() {
-    var path = window.location.pathname || '';
-    var segments = path.split('/').filter(Boolean);
-    var isPages = location.hostname.indexOf('github.io') !== -1;
-    var underPublic = segments[0] === 'public';
-    var target = 'about/';
-    if (isPages && segments.length) {
-      target = '/' + segments[0] + '/about/';
-    } else if (underPublic) {
-      target = '/public/about/';
-    }
-    window.location.replace(target);
+    var base = window.location.origin + window.location.pathname;
+    if (base.slice(-1) !== '/') base += '/';
+    window.location.replace(base + 'about/');
   })();
 </script></head><body><p style="padding:2rem;font-family:Arial,sans-serif;">Redirecting… If you are not redirected, <a href="about/">go to About</a>.</p></body></html>
