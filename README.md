@@ -7,16 +7,8 @@ Static HTML/CSS/JS site. Everything lives under `public/` and deploys as-is.
 - `public/assets/events.json`: events shown on About; edit to add/update date/title/description/link.
 - `.github/workflows/static-site.yml`: deploys `public/` to GitHub Pages via Actions.
 
-## Local preview
-```
-python -m http.server 8000
-open http://localhost:8000/
-```
-
-## Publish to GitHub Pages
-1) In GitHub Settings → Pages, set Source = GitHub Actions.  
-2) `git push` to `main` (or run workflow “Deploy static site to Pages” in Actions).  
-3) Check the workflow output for `page_url` (e.g., https://capp4good.github.io/Website/).
+## Published site
+  https://capp4good.github.io/CAPP4GOOD-Website/
 
 ## How to add a post
 1) Duplicate an existing folder under `public/post/` (e.g., `post_003`), or create a new one with your HTML.  

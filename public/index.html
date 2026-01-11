@@ -2,9 +2,9 @@
   (function() {
     var target = 'about/';
     var path = window.location.pathname || '';
-    var isPages = location.hostname.indexOf('github.io') !== -1 || path.indexOf('/Website/') !== -1;
+    var isPages = location.hostname.indexOf('github.io') !== -1 || path.indexOf('/CAPP4GOOD-Website/') !== -1;
     var underPublic = path.indexOf('/public/') !== -1;
-    if (isPages) target = '/Website/about/';
+    if (isPages) target = '/CAPP4GOOD-Website/about/';
     else if (underPublic) target = '/public/about/';
     window.location.replace(target);
   })();
