@@ -1,5 +1,5 @@
 title = "Notre-Dame de Paris"
-baseURL = "https://gohugo-theme-ananke.pages.dev"
+baseURL = "https://capp4good.github.io/Website/"
 languageCode = "en-us"
 theme = "ananke"
 resourceDir = "../resources"
