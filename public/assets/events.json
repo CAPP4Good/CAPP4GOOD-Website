@@ -1,26 +1,20 @@
 [
   {
-    "date": "2026-01-15",
-    "title": "Lightning Talks: Civic Tech Showcase",
-    "description": "Student teams present 5-minute lightning talks on data-for-good experiments.",
-    "link": "https://example.com/register/lightning-talks"
+    "date": "2026-01-12",
+    "title": "Coding Mondays",
+    "description": "Weekly co-work in JCL 3A (12:30–1:30). Hang out and build together.",
+    "link": ""
   },
   {
-    "date": "2026-01-18",
-    "title": "Workshop: Building Public Dashboards",
-    "description": "Hands-on session to prototype dashboards for community partners.",
-    "link": "https://example.com/register/dashboard-workshop"
+    "date": "2026-01-14",
+    "title": "Skill Session: C4G Style Guide",
+    "description": "With co-founder Praveen Chandar. JCL 390, 12:30–1:45. Please RSVP.",
+    "link": "https://forms.gle/jdTJyhuzkhYvtTreA"
   },
   {
-    "date": "2026-01-22",
-    "title": "Hacknight: Open Data for Equity",
-    "description": "Co-work night focused on open datasets for justice and equity projects.",
-    "link": "https://example.com/register/hacknight"
-  },
-  {
-    "date": "2026-01-24",
-    "title": "Fireside Chat: Data for Public Good",
-    "description": "Informal discussion with alumni working in civic data roles.",
-    "link": "https://example.com/register/fireside"
+    "date": "2026-01-21",
+    "title": "Lightning Talks Round 2",
+    "description": "Save the date! JCL 390, 12:30–1:45. Sign-up sheet coming soon.",
+    "link": ""
   }
 ]
