@@ -86,12 +86,8 @@
     .then(events => {
       const grid = document.getElementById('events-grid');
       if (!grid) return;
-      const today = new Date();
-      const horizon = new Date();
-      horizon.setDate(today.getDate() + 14);
       const parsed = events.map(e => ({ ...e, _date: new Date(e.date) })).sort((a, b) => a._date - b._date);
-      const list = parsed.filter(e => e._date >= today && e._date <= horizon);
-      const renderList = list.length ? list : parsed;
+      const renderList = parsed;
       if (!renderList.length) {
         grid.innerHTML = '<div class="muted">No events available.</div>';
         return;
@@ -110,10 +106,11 @@
           ${linkHtml}
         </div>`;
       }).join('');
+      grid.scrollLeft = 0;
       const shell = grid.closest('.events-shell');
       const prev = shell?.querySelector('.event-nav.prev');
       const next = shell?.querySelector('.event-nav.next');
-      const scrollBy = () => grid.clientWidth * 0.85;
+      const scrollBy = () => grid.clientWidth * 0.75;
       if (prev) prev.onclick = () => grid.scrollBy({ left: -scrollBy(), behavior: 'smooth' });
       if (next) next.onclick = () => grid.scrollBy({ left: scrollBy(), behavior: 'smooth' });
     })
