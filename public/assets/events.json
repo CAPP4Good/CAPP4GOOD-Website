@@ -1,23 +1,110 @@
 [
   {
-    "date": "2026-01-12",
-    "title": "Coding Mondays",
-    "description": "Weekly co-work in JCL 3A (12:30–1:30). Hang out and build together.",
+    "date": "2026-09-27",
+    "startTime": "13:30",
+    "endTime": "14:30",
+    "title": "CAPPY Hour at the Point",
+    "description": "Join us a Prometory Point at 1:30 PM this Sunday to get to know your fellow CAPPies!",
     "link": "",
-    "image": "images/codingmondays.png"
+    "image": "images/cappy-hour-september.jpeg"
   },
   {
-    "date": "2026-01-14",
-    "title": "Skill Session: C4G Style Guide",
-    "description": "With co-founder Praveen Chandar. JCL 390, 12:30–1:45. Please RSVP.",
-    "link": "https://forms.gle/jdTJyhuzkhYvtTreA",
-    "image": "images/skillsession-styleguide.png"
+    "date": "2026-09-29",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "title": "Policy Speed Dating (and CAPPY Hour)",
+    "description": "Come talk policy interests, passions, and big ideas with the people in your program! Please RSVP to reserve your spot.",
+    "link": "https://forms.gle/A33raj1whTpqbCYk6",
+    "image": "images/policy-speed-dating.jpeg"
   },
   {
-    "date": "2026-01-21",
-    "title": "Lightning Talks Round 2",
-    "description": "Save the date! JCL 390, 12:30–1:45. Sign-up sheet coming soon.",
+    "date": "2026-10-06",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Git Together and Code",
+    "description": "Week 2 · Tuesday.",
     "link": "",
-    "image": "images/lt-round2.png"
+    "image": ""
+  },
+  {
+    "date": "2026-10-14",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Git Together and Code",
+    "description": "Week 3 · Wednesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "2026-10-20",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Lightning Talks",
+    "description": "Week 4 · Tuesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "2026-10-27",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Git Together and Code",
+    "description": "Week 5 · Tuesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "2026-11-03",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Skill Session",
+    "description": "Week 6 · Tuesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "2026-11-10",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Git Together and Code",
+    "description": "Week 7 · Tuesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "2026-11-17",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Frontier Dialogue",
+    "description": "Week 8 · Tuesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "2026-12-01",
+    "startTime": "12:30",
+    "endTime": "13:30",
+    "title": "Git Together and Code",
+    "description": "Week 9 · Tuesday.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "title": "CAPPsgiving",
+    "description": "Week 8 · date and time TBD.",
+    "link": "",
+    "image": ""
+  },
+  {
+    "date": "",
+    "startTime": "",
+    "endTime": "",
+    "title": "Civic Tech Hackathon",
+    "description": "Week 10 · date and time TBD.",
+    "link": "",
+    "image": ""
   }
 ]

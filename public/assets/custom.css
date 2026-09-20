@@ -205,6 +205,95 @@ footer a:hover {
   width: 100%;
 }
 
+.events-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* "Add to your calendar" disclosure on each event card.
+   The menu sits in the flow rather than floating: the home page slider sets
+   overflow-x, which would clip an absolutely positioned popover. */
+/* Action row at the foot of the card: RSVP on the left, calendar on the right.
+   margin-top:auto pins the row to the bottom, so it lines up across cards of
+   different text lengths. */
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.event-actions .event-link {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* margin-left:auto keeps the calendar hard right whether or not the card
+   has an RSVP button beside it. */
+.event-calendar {
+  margin-left: auto;
+  text-align: right;
+}
+
+.event-calendar > summary {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--brand);
+  background: #fff;
+  border: 1px solid #d6deee;
+  border-radius: 8px;
+  padding: 0.35rem 0.7rem;
+}
+
+.event-calendar > summary::-webkit-details-marker {
+  display: none;
+}
+
+.event-calendar > summary:hover {
+  background: #eef2fb;
+  border-color: var(--brand);
+}
+
+.event-calendar > summary:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.event-calendar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 165px;
+  max-width: 100%;
+  text-align: left;
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+  background: #fff;
+  border: 1px solid #e6e9f2;
+  border-radius: 10px;
+}
+
+.event-calendar-menu a {
+  padding: 0.4rem 0.55rem;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.event-calendar-menu a:hover {
+  background: #eef2fb;
+  color: var(--brand);
+}
+
 .event-card {
   background: var(--card);
   border-radius: var(--radius);
@@ -285,7 +374,21 @@ footer a:hover {
 
 .event-date {
   font-weight: 700;
+  margin: 5px 0px;
   color: var(--brand);
+}
+
+/* Time sits beside the date, separated by a dot and set slightly back so the
+   date stays the thing the eye lands on. */
+.event-time {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.event-time::before {
+  content: "\00b7";
+  margin: 0 0.4rem;
+  color: #9aa4b8;
 }
 
 .event-title {

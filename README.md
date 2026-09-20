@@ -6,10 +6,12 @@ Static HTML/CSS/JS site. Everything lives under `public/` and deploys as-is.
 `public/` is the published root — what it contains is exactly what the site serves.
 
 - `public/index.html`: the main page (the former About page), served at `/`.
+- `public/events/index.html`: the full calendar, served at `/events/`.
 - `public/contact/index.html`: served at `/contact/`.
 - `public/404.html`: GitHub Pages' not-found page.
 - `public/about/index.html`: redirect stub that forwards old `/about/` links to `/`.
-- `public/assets/events.json`: events shown on the main page; edit to add/update date/title/description/link.
+- `public/assets/events.json`: the event data; edit to add/update date/title/description/link.
+- `public/assets/events.js`: shared rendering for the calendar, used by both pages.
 - `public/assets/custom.css` + `public/ananke/`: styles.
 - `.github/workflows/static-site.yml`: deploys `public/` to GitHub Pages via Actions.
 
@@ -42,12 +44,24 @@ depth, so relative URLs cannot work there. It carries a hardcoded
 ```json
 {
   "date": "2026-01-22",
+  "startTime": "12:30",
+  "endTime": "13:30",
   "title": "Hacknight: Open Data",
   "description": "Hands-on co-work night with open datasets.",
-  "link": "https://example.com/register"
+  "link": "https://example.com/register",
+  "image": "images/hacknight.png"
 }
 ```
-2) Every entry is shown, sorted by date; the arrows scroll through them.
+2) The home page shows the next three upcoming events; `/events/` lists every event,
+   soonest first. Past events drop off the home page automatically but stay on `/events/`.
+3) For an event whose date is not settled yet, leave `"date": ""`. The card renders as
+   "Date TBD" and sorts after everything scheduled; fill in the date later to place it.
+4) Image paths in `events.json` are relative to the site root (`images/...`). The events
+   page passes `assetBase: '../'` so the same paths work one level down.
+5) `startTime`/`endTime` are 24-hour campus-local times and drive the "Add to calendar"
+   button. Leave both blank for an all-day entry; omit `endTime` for a one-hour default.
+   An event with no `date` gets no button, since there is nothing to schedule.
+   The timezone is set by `TIMEZONE` in `public/assets/events.js`.
 
 ## Contribute workflow
 - Preferred: open a PR with your page and/or event edits.  
