@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://capp4good.github.io/sitemap.xml
+
+Sitemap: https://capp4good.github.io/CAPP4GOOD-Website/sitemap.xml
