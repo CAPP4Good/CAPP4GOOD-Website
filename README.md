@@ -16,7 +16,7 @@ Static HTML/CSS/JS site. Everything lives under `public/` and deploys as-is.
 - `.github/workflows/static-site.yml`: deploys `public/` to GitHub Pages via Actions.
 
 ## Published site
-  https://capp4good.github.io/CAPP4GOOD-Website/
+  https://capp4good.github.io/
 
 ## Local preview
 Serve `public/` over HTTP (opening the files directly with `file://` will not work,
