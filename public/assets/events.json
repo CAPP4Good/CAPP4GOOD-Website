@@ -4,7 +4,7 @@
     "startTime": "13:30",
     "endTime": "14:30",
     "title": "CAPPY Hour at the Point",
-    "description": "Join us a Prometory Point at 1:30 PM this Sunday to get to know your fellow CAPPies!",
+    "description": "Join us a Promontory Point at 1:30 PM this Sunday to get to know your fellow CAPPies!",
     "link": "",
     "image": "images/cappy-hour-september.jpeg"
   },
@@ -12,7 +12,7 @@
     "date": "2026-09-29",
     "startTime": "17:00",
     "endTime": "18:00",
-    "title": "Policy Speed Dating (and CAPPY Hour)",
+    "title": "Policy Speed Dating (and CAPPy Hour)",
     "description": "Come talk policy interests, passions, and big ideas with the people in your program! Please RSVP to reserve your spot.",
     "link": "https://forms.gle/A33raj1whTpqbCYk6",
     "image": "images/policy-speed-dating.jpeg"
@@ -22,7 +22,7 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Git Together and Code",
-    "description": "Week 2 · Tuesday.",
+    "description": "Learn a new skill through a mini-session, then co-work with your classmates.",
     "link": "",
     "image": ""
   },
@@ -31,7 +31,7 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Git Together and Code",
-    "description": "Week 3 · Wednesday.",
+    "description": "Learn a new skill through a mini-session, then co-work with your classmates.",
     "link": "",
     "image": ""
   },
@@ -40,7 +40,7 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Lightning Talks",
-    "description": "Week 4 · Tuesday.",
+    "description": "Your fellow CAPPies will give 5-minute talks on projects or topics that interest them.",
     "link": "",
     "image": ""
   },
@@ -49,7 +49,7 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Git Together and Code",
-    "description": "Week 5 · Tuesday.",
+    "description": "Learn a new skill through a mini-session, then co-work with your classmates.",
     "link": "",
     "image": ""
   },
@@ -58,7 +58,7 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Skill Session",
-    "description": "Week 6 · Tuesday.",
+    "description": "Full-length session on a new skill for you to learn.",
     "link": "",
     "image": ""
   },
@@ -67,16 +67,16 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Git Together and Code",
-    "description": "Week 7 · Tuesday.",
+    "description": "Learn a new skill through a mini-session, then co-work with your classmates.",
     "link": "",
     "image": ""
   },
   {
     "date": "2026-11-17",
-    "startTime": "12:30",
-    "endTime": "13:30",
+    "startTime": "17:00",
+    "endTime": "18:00",
     "title": "Frontier Dialogue",
-    "description": "Week 8 · Tuesday.",
+    "description": "Discussion focused on ethics.",
     "link": "",
     "image": ""
   },
@@ -85,7 +85,7 @@
     "startTime": "12:30",
     "endTime": "13:30",
     "title": "Git Together and Code",
-    "description": "Week 9 · Tuesday.",
+    "description": "Learn a new skill through a mini-session, then co-work with your classmates.",
     "link": "",
     "image": ""
   },
@@ -94,7 +94,7 @@
     "startTime": "",
     "endTime": "",
     "title": "CAPPsgiving",
-    "description": "Week 8 · date and time TBD.",
+    "description": "Week 8 · date and time TBD",
     "link": "",
     "image": ""
   },
@@ -103,7 +103,7 @@
     "startTime": "",
     "endTime": "",
     "title": "Civic Tech Hackathon",
-    "description": "Week 10 · date and time TBD.",
+    "description": "Week 10 · date and time TBD",
     "link": "",
     "image": ""
   }
